@@ -5,7 +5,7 @@
 
 ## Why all this?
 ✈️📷 The aim of the work is the semantic segmentation of point clouds that were generated from aerial images using Structure from Motion and Dense Image Matching. To do this, an extensive data set is first annotated in order to obtain suitable training data. <br>
-The ground truth data consists of four classes: 
+The ground truth data consists of five classes: 
 - ground ⛰️
 - buildings 🏠
 - vegetation 🌳
