@@ -45,22 +45,22 @@ Next up, the `Python Code` is used to create batches, to train and validate the 
 ### Jupyter-Notebooks
 The initially annotated point cloud contains too many incorrect assignments, so optimization is necessary. In addition, the "Not Ground" class is divided into the "Vegetation" and "Humanmade" classes.<br>
 Description of the subfolders:
-📂 **Calculate height above DEM** ➡️ Generate a digital elevation model from a classified point cloud and calculate the height above ground as an additional scalar field
-📂 **Seperate building** ➡️ Seperates the vegetation inside of the building-class with the use of different treshholds
-📂 **Intersection with ALKIS** ➡️ Intersects a point cloud with two-dimensional *Road*-polygons and adds `insde_road` as an additional scalar field
-📂 **KMeans1** ➡️ First K-Means clustering to cluster the class "Not Ground"
-📂 **KMeans2** ➡️ Second K-Means clustering to cluster the rest of class "Not Ground"
-📂 **KMeans, DBScan and RF** ➡️ Cluster the remaining "Not-Ground"-Points with the geometry and radiometry and classify the resulting clusters using Random Forest
-📂 **PointNet++** ➡️ Test of some functions which are import for PointNet++ like Batching, *Farthest Point Sampling* and *Ball Query*
+📂 **Calculate height above DEM** ➡️ Generate a digital elevation model from a classified point cloud and calculate the height above ground as an additional scalar field<br>
+📂 **Seperate building** ➡️ Seperates the vegetation inside of the building-class with the use of different treshholds<br>
+📂 **Intersection with ALKIS** ➡️ Intersects a point cloud with two-dimensional *Road*-polygons and adds `insde_road` as an additional scalar field<br>
+📂 **KMeans1** ➡️ First K-Means clustering to cluster the class "Not Ground"<br>
+📂 **KMeans2** ➡️ Second K-Means clustering to cluster the rest of class "Not Ground"<br>
+📂 **KMeans, DBScan and RF** ➡️ Cluster the remaining "Not-Ground"-Points with the geometry and radiometry and classify the resulting clusters using Random Forest<br>
+📂 **PointNet++** ➡️ Test of some functions which are import for PointNet++ like Batching, *Farthest Point Sampling* and *Ball Query*<br>
 
 ### Python Code
 ✏️`create_batches.py` ➡️ script will import a las or laz file creates the batches with a defined number of points<br>
 ✏️`train_pointnet2.py` ➡️ script will import the batches and initalize a pointnet2 model.<br>
-   -  If defined it will use a predefined model to further train this model.
+   -  If defined it will use a predefined model to further train this model.<br>
 ✏️ `classify_batches.py` ➡️ This script will import the batches in a defined path to classify every batch.<br>
-   - after batch classification it will combine the batches back to a single pointcloud, in order to create a fully classified cloud
+   - after batch classification it will combine the batches back to a single pointcloud, in order to create a fully classified cloud<br>
 ✏️`validate_model.py` ➡️ script will import the batches from a defined path and uses the validation batch to calculate some statistics<br>
-   - In addition it will plot a confusion matrix and the ROC-plots
+   - In addition it will plot a confusion matrix and the ROC-plots<br>
 
 ## Related Projects
 - [Pointnet/Pointnet++ Pytorch](https://github.com/yanx27/Pointnet_Pointnet2_pytorch) by Xu Yan (2019)
