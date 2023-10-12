@@ -19,26 +19,6 @@ The ground truth data consists of five classes:
 🚀 The deep learning architecture PointNet++ is then applied, with the parameters used largely based on the work [*alsNet* of Lukas Winiwarter (2019)](https://github.com/lwiniwar/alsNet#readme). <br>
 🔥 The chosen approach achieves an overall accuracy of **96.5%**.
 
-## Requirements
-These scipts are tested with the following libarays.
-
-Some of the libarays are not common and need to be installed on a special way:
-- [PyTorch](https://pytorch.org/get-started/locally/) (2.0.1) with [CUDA 11.8](https://developer.nvidia.com/cuda-11-8-0-download-archive)
-- [torchmetrics](https://torchmetrics.readthedocs.io/en/stable/pages/quickstart.html) (1.1.0)
-- [laspy[laszip]](https://laspy.readthedocs.io/en/latest/installation.html) (2.4.1)
-- [pointnet2_pytorch](https://github.com/erikwijmans/Pointnet2_PyTorch) (Pointnet++ Pytorch from Erik Wijmans (2018) - last update July 30th, 2021)
-  - This is especially important for code `pointnet_utils.py`
-
-KD-Tree and Confusion Matrix are calculated by
-- [scipy.spatial](https://scipy.org/install/) (1.11.1) 
-- [sklearn.metrics](https://scikit-learn.org/stable/install.html) (1.3.1.)
-
-And some other standard common python libarays
-- [numpy](https://numpy.org/install/) (1.25.)
-- [tqdm](https://pypi.org/project/tqdm/) (4.66.1)
-- [matplotlib](https://matplotlib.org/stable/users/installing/index.html) (3.8.0)
-- [pandas](https://pandas.pydata.org/docs/getting_started/install.html) (2.1.1)
-
 ## Structure and Description
 This repository consists of two folders: `Jupyter Notebooks` and `Python Code`. <br> 
 First, the `Jupyter-Notebooks` are used to optimize the ground-truth data and to test some important functions for the PointNet++ model<br>
@@ -63,6 +43,26 @@ Description of the subfolders:
    - after batch classification it will combine the batches back to a single pointcloud, in order to create a fully classified cloud<br>
 4. ✏️`validate_model.py` ➡️ script will import the batches from a defined path and uses the validation batch to calculate some statistics<br>
    - In addition it will plot a confusion matrix and the ROC-plots<br>
+
+## Requirements
+These scipts are tested with the following libarays.
+
+Some of the libarays are not common and need to be installed on a special way:
+- [PyTorch](https://pytorch.org/get-started/locally/) (2.0.1) with [CUDA 11.8](https://developer.nvidia.com/cuda-11-8-0-download-archive)
+- [torchmetrics](https://torchmetrics.readthedocs.io/en/stable/pages/quickstart.html) (1.1.0)
+- [laspy[laszip]](https://laspy.readthedocs.io/en/latest/installation.html) (2.4.1)
+- [pointnet2_pytorch](https://github.com/erikwijmans/Pointnet2_PyTorch) (Pointnet++ Pytorch from Erik Wijmans (2018) - last update July 30th, 2021)
+  - This is especially important for code `pointnet_utils.py`
+
+KD-Tree and Confusion Matrix are calculated by
+- [scipy.spatial](https://scipy.org/install/) (1.11.1) 
+- [sklearn.metrics](https://scikit-learn.org/stable/install.html) (1.3.1.)
+
+And some other standard common python libarays
+- [numpy](https://numpy.org/install/) (1.25.)
+- [tqdm](https://pypi.org/project/tqdm/) (4.66.1)
+- [matplotlib](https://matplotlib.org/stable/users/installing/index.html) (3.8.0)
+- [pandas](https://pandas.pydata.org/docs/getting_started/install.html) (2.1.1)
 
 ## Related Projects
 - [Pointnet/Pointnet++ Pytorch](https://github.com/yanx27/Pointnet_Pointnet2_pytorch) by Xu Yan (2019)
