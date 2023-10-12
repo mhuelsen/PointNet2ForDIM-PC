@@ -54,12 +54,12 @@ Description of the subfolders:
 📂 **PointNet++** ➡️ Test of some functions which are import for PointNet++ like Batching, *Farthest Point Sampling* and *Ball Query*
 
 ### Python Code
-✏️`create_batches.py` ➡️ script will import a las or laz file creates the batches with a defined number of points
-✏️`train_pointnet2.py` ➡️ script will import the batches and initalize a pointnet2 model.
+✏️`create_batches.py` ➡️ script will import a las or laz file creates the batches with a defined number of points<br>
+✏️`train_pointnet2.py` ➡️ script will import the batches and initalize a pointnet2 model.<br>
    -  If defined it will use a predefined model to further train this model.
-✏️ `classify_batches.py` ➡️ This script will import the batches in a defined path to classify every batch.
+✏️ `classify_batches.py` ➡️ This script will import the batches in a defined path to classify every batch.<br>
    - after batch classification it will combine the batches back to a single pointcloud, in order to create a fully classified cloud
-✏️`validate_model.py` ➡️ script will import the batches from a defined path and uses the validation batch to calculate some statistics
+✏️`validate_model.py` ➡️ script will import the batches from a defined path and uses the validation batch to calculate some statistics<br>
    - In addition it will plot a confusion matrix and the ROC-plots
 
 ## Related Projects
