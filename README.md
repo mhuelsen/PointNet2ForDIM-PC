@@ -10,7 +10,8 @@ The ground truth data consists of four classes:
 - buildings
 - vegetation
 - humanmade and
-- bridges<br>
+- bridges
+
 🖱️ The annotated data set can be downloaded at [AcademicCloud](https://sync.academiccloud.de/index.php/s/hj5C7ebHkkTZkvQ).<br>
 
 🚀 The deep learning architecture PointNet++ is then applied, with the parameters used largely based on the work [*alsNet* of Lukas Winiwarter (2019)](https://github.com/lwiniwar/alsNet#readme). <br>
