@@ -44,6 +44,7 @@ Description of the subfolders:
 4. ✏️`validate_model.py` ➡️ script will import the batches from a defined path and uses the validation batch to calculate some statistics
    - In addition it will plot a confusion matrix and the ROC-plots
 
+
 📁 The trained models are stored within the **Pretrained Models** folder:
 - final_model_6-atts.pth ➡️ final model trained with six attributes (X, Y, Z, Hue, Saturation, Value)
 - final_model_all-atts.pth ➡️ final model trained with eight attributes (X, Y, Z, Hue, Saturation, Value, number of stereomodels, point precision)
