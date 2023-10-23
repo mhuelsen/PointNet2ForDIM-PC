@@ -14,7 +14,7 @@ The ground truth data consists of five classes:
 
 🖱️ The annotated point cloud covers 12 km² and 66.8 million points. It includes both urban areas and rural areas with forests and meadows.<br>
 ![image form the annotated point cloud](trainingsdatensatz.png)
-<!--💾 The dataset can be downloaded at [AcademicCloud](https://sync.academiccloud.de/index.php/s/hj5C7ebHkkTZkvQ).<br>-->
+<!--💾 The dataset can be downloaded at [AcademicCloud]().<br>-->
 
 🚀 The deep learning architecture PointNet++ is then applied, with the parameters used largely based on the work [*alsNet* of Lukas Winiwarter (2019)](https://github.com/lwiniwar/alsNet#readme). <br>
 🔥 The chosen approach achieves an overall accuracy of **96.5%**.
